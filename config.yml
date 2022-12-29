@@ -1,0 +1,50 @@
+baseURL: "https://mkanoria.github.io"
+languageCode: en-us
+title: Mayank Kanoria
+theme: PaperMod
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: About
+                  url: about/
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Tags
+                  url: tags/
+                  weight: 10
+                - name: Discord
+                  url: https://discord.gg/ahpmTvhVmp
+
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Personal website"
+    author: Mayank Kanoria
+    defaultTheme: auto
+    ShowReadingTime: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+
+    homeInfoParams:
+        Title: "Hi! I'm Mayank"
+        Content: >
+            I'm a senior at the University of Waterloo, studying Computer Science. Thanks for stopping by!
+    socialIcons:
+        - name: github
+          url: "https://github.com/mkanoria"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/mkanoria/"
